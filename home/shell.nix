@@ -13,7 +13,7 @@
       COLORTERM = "truecolor";
     };
     initContent = ''
-      export PATH="$HOME/.local/bin:$PATH"
+      export PATH="$HOME/.npm-global/bin:$HOME/.local/bin:$PATH"
 
       # Zellij-tmux-shim (Claude Code agent teams in zellij)
       if [[ -n "$ZELLIJ" ]]; then
