@@ -12,7 +12,7 @@
     sessionVariables = {
       COLORTERM = "truecolor";
     };
-    initExtra = ''
+    initContent = ''
       export PATH="$HOME/.local/bin:$PATH"
 
       # Zellij-tmux-shim (Claude Code agent teams in zellij)

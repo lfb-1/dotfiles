@@ -2,14 +2,12 @@
   programs.git = {
     enable = true;
     userName = "fbl";
-    extraConfig = {
-      credential."https://github.com".helper = "!${pkgs.gh}/bin/gh auth git-credential";
-      credential."https://gist.github.com".helper = "!${pkgs.gh}/bin/gh auth git-credential";
-    };
+    # credential helpers are set automatically by programs.gh.gitCredentialHelper
   };
 
   programs.gh = {
     enable = true;
+    gitCredentialHelper.enable = true;
     settings = {
       git_protocol = "https";
       prompt = "enabled";
