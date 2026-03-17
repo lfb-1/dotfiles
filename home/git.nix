@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   programs.git = {
     enable = true;
-    userName = "fbl";
+    settings.user.name = "fbl";
     # credential helpers are set automatically by programs.gh.gitCredentialHelper
   };
 

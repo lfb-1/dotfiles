@@ -1,6 +1,7 @@
 { ... }: {
   programs.ssh = {
     enable = true;
+    enableDefaultConfig = false;
     matchBlocks = {
       "fbl-a6k" = {
         hostname = "100.107.13.16";
