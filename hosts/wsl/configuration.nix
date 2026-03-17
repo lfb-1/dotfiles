@@ -18,6 +18,9 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # Enable nix-ld for running pre-built binaries (Claude Code, etc.)
+  programs.nix-ld.enable = true;
+
   environment.systemPackages = with pkgs; [
     git
     vim
