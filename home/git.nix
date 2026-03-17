@@ -3,6 +3,9 @@
     enable = true;
     settings.user.name = "fbl";
     # credential helpers are set automatically by programs.gh.gitCredentialHelper
+    includes = [
+      { path = "~/.config/git/local.gitconfig"; }  # machine-local secrets (overleaf token, email, etc.)
+    ];
   };
 
   programs.gh = {
